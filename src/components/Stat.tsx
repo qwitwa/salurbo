@@ -70,11 +70,11 @@ const Stat = ({ stat, value }: MyProps) => {
   const show = valueToVisibilityArray(value);
   const border = get_border({ stat: stat });
   return (
-    <div className="mx-1 flex-col">
-      <div className={cx("my-0.5 h-1 w-8", clr, show[0])} />
-      <div className={cx("my-0.5 h-1 w-8", clr, show[1])} />
-      <div className={cx("my-0.5 h-1 w-8", clr, show[2])} />
-      <div className="box-border p-0 font-mono">
+    <div className="mx-1 flex-1">
+      <div className={cx("my-0.5 h-0.5 w-8", clr, show[0])} />
+      <div className={cx("my-0.5 h-0.5 w-8", clr, show[1])} />
+      <div className={cx("my-0.5 h-0.5 w-8", clr, show[2])} />
+      <div className="box-border min-w-[3.5rem] p-0 font-mono">
         <span
           className={cx(
             "my-0 inline-block w-8 py-0 text-center font-bold text-white",
@@ -88,9 +88,9 @@ const Stat = ({ stat, value }: MyProps) => {
           {value}
         </span>
       </div>
-      <div className={cx("my-0.5 h-1 w-8", clr, show[3])} />
-      <div className={cx("my-0.5 h-1 w-8", clr, show[4])} />
-      <div className={cx("my-0.5 h-1 w-8", clr, show[5])} />
+      <div className={cx("my-0.5 h-0.5 w-8", clr, show[3])} />
+      <div className={cx("my-0.5 h-0.5 w-8", clr, show[4])} />
+      <div className={cx("my-0.5 h-0.5 w-8", clr, show[5])} />
     </div>
   );
 };
