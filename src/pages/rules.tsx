@@ -24,8 +24,8 @@ const Rules = () => (
     <CollapsibleCard heading="Inventory Slots and Exhaustion">
       You gain <CON>5</CON>, <STR>4</STR>, <DEX>3</DEX>, <INT>2</INT>,{" "}
       <WIS>1</WIS>, and <CHA>0</CHA> inventory slots modified by <CON />,{" "}
-      <STR />, <DEX />, <INT />, <WIS />, <CHA /> respectively. It's possible to
-      gain negative inventory slots when adding all of these up.
+      <STR />, <DEX />, <INT />, <WIS />, <CHA /> respectively. It&apos;s
+      possible to gain negative inventory slots when adding all of these up.
     </CollapsibleCard>
   </>
 );
