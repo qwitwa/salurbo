@@ -27,7 +27,7 @@ const stats: readonly StatT[] = [
   "CHA",
 ] as const;
 
-let res = stats.map(StatCompFactory) as readonly ((
+const res = stats.map(StatCompFactory) as readonly ((
   props: Props
 ) => JSX.Element)[];
 const CON = res[0]!;
