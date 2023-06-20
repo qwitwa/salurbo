@@ -1,8 +1,8 @@
 import { cva, cx, VariantProps } from "cva";
 
-type StatT = "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA";
+export type StatT = "STR" | "DEX" | "CON" | "INT" | "WIS" | "CHA";
 
-const get_clr = cva("", {
+export const getStatColor = cva("", {
   variants: {
     stat: {
       STR: "bg-red-600",
@@ -60,13 +60,13 @@ const valueToVisibilityArray = (value: number) => {
   }
 };
 
-interface MyProps extends VariantProps<typeof get_clr> {
+interface MyProps extends VariantProps<typeof getStatColor> {
   stat: StatT;
   value: number;
 }
 
 const Stat = ({ stat, value }: MyProps) => {
-  const clr = get_clr({ stat: stat });
+  const clr = getStatColor({ stat: stat });
   const show = valueToVisibilityArray(value);
   const border = get_border({ stat: stat });
   return (

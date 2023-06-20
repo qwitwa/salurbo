@@ -44,7 +44,7 @@ const InnerLayout = ({ children }: { children: ReactNode }) => {
             {!!user.isSignedIn && <UserButton />}
           </div>
         </header>
-        <main className="flex flex-auto flex-col bg-slate-300">{children}</main>
+        <main className="flex flex-auto flex-col bg-zinc-200">{children}</main>
       </div>
     </>
   );
