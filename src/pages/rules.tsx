@@ -1,3 +1,4 @@
+import { EXPORT_DETAIL } from "next/dist/shared/lib/constants";
 import CollapsibleCard from "~/components/CollapsibleCard";
 import ExtLink from "~/components/ExtLink";
 import { CON, STR, DEX, INT, WIS, CHA } from "~/components/StatPills";
@@ -5,9 +6,14 @@ import { CON, STR, DEX, INT, WIS, CHA } from "~/components/StatPills";
 const Rules = () => (
   <>
     <CollapsibleCard heading="Character Creation">
-      <p>Stat generation works identically to LotFP</p>
       <p>
-        The point of departure is we use a modified Grit/Flesh
+        Stat generation works identically to LotFP.{" "}
+        <ExtLink href="https://paulgorman.org/roleplaying/dnd/misc/LotFP_Rules_and_Magic_Free_Version_without_Art.pdf">
+          PDF
+        </ExtLink>
+      </p>
+      <p>
+        The point of departure is we use a modified Grit/Flesh{" "}
         <ExtLink href="https://lastgaspgrimoire.com/2013/04/13/id-hit-that/">
           LGG
         </ExtLink>
