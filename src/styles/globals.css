@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-p {
-  @apply mt-5;
+p + p {
+  @apply mt-4;
+}
+
+* {
+  box-sizing: border-box;
 }
