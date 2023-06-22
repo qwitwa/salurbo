@@ -2,7 +2,7 @@ import Stat from "~/components/Stat";
 import Card from "~/components/Card";
 const DNDChar = () => (
   <Card>
-    <div className="flex flex-wrap p-1">
+    <div className="flex flex-wrap gap-y-2 p-1">
       <div className="flex">
         <Stat stat="CON" value={16} />
         <Stat stat="STR" value={8} />
